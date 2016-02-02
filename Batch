@@ -1,0 +1,115 @@
+% BatchISOSim
+
+SCSubnet1bb
+PowernetParameters
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+if 0
+SC650_6s
+
+UInit=16
+RunISO60Sim
+save SC6x650F16V_ISOData MinISO60Voltage AveCurrWithoutRecup AveCurrWithRecup LowVoltageTime MaxInCurrent
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+SC650_7s
+datestr(now)
+
+UInit=16
+RunISO60Sim
+save SC7x650F16V_ISOData MinISO60Voltage AveCurrWithoutRecup AveCurrWithRecup LowVoltageTime MaxInCurrent
+
+UInit=17
+RunISO60Sim
+save SC7x650F17V_ISOData MinISO60Voltage AveCurrWithoutRecup AveCurrWithRecup LowVoltageTime MaxInCurrent
+
+UInit=18
+RunISO60Sim
+save SC7x650F18V_ISOData MinISO60Voltage AveCurrWithoutRecup AveCurrWithRecup LowVoltageTime MaxInCurrent
+
+UInit=18.5
+RunISO60Sim
+save SC7x650F18p5V_ISOData MinISO60Voltage AveCurrWithoutRecup AveCurrWithRecup LowVoltageTime MaxInCurrent
+
+UInit=18.9
+RunISO60Sim
+save SC7x650F18p9V_ISOData MinISO60Voltage AveCurrWithoutRecup AveCurrWithRecup LowVoltageTime MaxInCurrent
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+SC1200_6s
+datestr(now)
+
+UInit=16
+RunISO60Sim
+save SC6x1200F16V_ISOData MinISO60Voltage AveCurrWithoutRecup AveCurrWithRecup LowVoltageTime MaxInCurrent
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+SC1200_7s
+datestr(now)
+
+UInit=17
+RunISO60Sim
+save SC7x12F17V_ISOData MinISO60Voltage AveCurrWithoutRecup AveCurrWithRecup LowVoltageTime MaxInCurrent
+
+UInit=17.5
+RunISO60Sim
+save SC7x12F17p5V_ISOData MinISO60Voltage AveCurrWithoutRecup AveCurrWithRecup LowVoltageTime MaxInCurrent
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+SC1500_6s
+datestr(now)
+
+UInit=15.5
+RunISO60Sim
+save SC6x15F15p5V_ISOData MinISO60Voltage AveCurrWithoutRecup AveCurrWithRecup LowVoltageTime MaxInCurrent
+
+UInit=16
+RunISO60Sim
+save SC6x15F16V_ISOData MinISO60Voltage AveCurrWithoutRecup AveCurrWithRecup LowVoltageTime MaxInCurrent
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+SC2000_6s
+datestr(now)
+
+UInit=14.5
+RunISO60Sim
+save SC6x20F14p5V_ISOData MinISO60Voltage AveCurrWithoutRecup AveCurrWithRecup LowVoltageTime MaxInCurrent
+
+UInit=15
+RunISO60Sim
+save SC6x20F15V_ISOData MinISO60Voltage AveCurrWithoutRecup AveCurrWithRecup LowVoltageTime MaxInCurrent
+
+UInit=15.5
+RunISO60Sim
+save SC6x20F15p5V_ISOData MinISO60Voltage AveCurrWithoutRecup AveCurrWithRecup LowVoltageTime MaxInCurrent
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+end
+SC3000_6s
+datestr(now)
+if 0
+UInit=14
+RunISO60Sim
+save SC6x30F14V_ISOData MinISO60Voltage AveCurrWithoutRecup AveCurrWithRecup LowVoltageTime MaxInCurrent
+end
+UInit=14.5
+RunISO60Sim
+save SC6x30F14p5V_ISOData MinISO60Voltage AveCurrWithoutRecup AveCurrWithRecup LowVoltageTime MaxInCurrent
+
+UInit=15
+RunISO60Sim
+save SC6x30F15V_ISOData MinISO60Voltage AveCurrWithoutRecup AveCurrWithRecup LowVoltageTime MaxInCurrent
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%disp('Starting simulation of single-module architectures.')
+%datestr(now)
+%LocalBatchSim
+
+%disp('Starting simulation of second battery.')
+%datestr(now)
+%BatchBattSim
